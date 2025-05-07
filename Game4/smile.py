@@ -5,9 +5,15 @@ import cv2
 import threading
 import time
 from queue import Queue
-
+from datetime import datetime
 class ExpressionPlatformer:
     def __init__(self, screen):
+        if not pygame.get_init():
+            pygame.init()
+
+        if not pygame.display.get_surface():
+            pygame.display.set_mode((800, 600))  # Or whatever your game window size is
+
         self.screen = screen
         self.WIDTH, self.HEIGHT = 1000, 800  # New screen size
         self.clock = pygame.time.Clock()
@@ -173,65 +179,87 @@ class ExpressionPlatformer:
             smile_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_smile.xml')
 
             # Initialize camera
-            cap = cv2.VideoCapture(0)
-            if not cap.isOpened():
-                print("Error: Could not open camera.")
-                return False
+            
 
-            self.camera_enabled = True
+            
+
+            # Change codec if necessary (Try 'MJPG' or 'H264' if 'XVID' doesn't work)
+            fourcc = cv2.VideoWriter_fourcc(*'MJPG')  # Use MJPG codec for compatibility
+            out = cv2.VideoWriter('game_recording.avi', fourcc, 20.0, (640, 480))  # Change format to .avi for compatibility
 
             def smile_detection_thread():
-                while self.camera_enabled:
-                    ret, frame = cap.read()
-                    if not ret:
-                        continue
+                try:
+                    # Initialize camera
+                    cap = cv2.VideoCapture(0)
+                    if not cap.isOpened():
+                        print("Error: Could not open camera.")
+                        return
 
-                    # Convert to grayscale
-                    gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
+                    # Set recording resolution to match Pygame display (200x150)
+                    rec_width, rec_height = 200, 150
+                    fourcc = cv2.VideoWriter_fourcc(*'MJPG')  # Works well for small resolutions
+                    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+                    filename = f"face_recording.avi"
+                    out = cv2.VideoWriter(filename, fourcc, 20.0, (rec_width, rec_height))
 
-                    # Detect faces
-                    faces = face_cascade.detectMultiScale(gray, 1.3, 5)
+                    if not out.isOpened():
+                        print("Error: Could not initialize video writer.")
+                        return
 
-                    # Default to not smiling
-                    is_smiling = False
+                    print(f"Recording started: {filename}")
 
-                    for (x, y, w, h) in faces:
-                        # Region of interest for the face
-                        roi_gray = gray[y:y + h, x:x + w]
+                    while self.camera_enabled:
+                        ret, frame = cap.read()
+                        if not ret:
+                            print("Error: Failed to capture frame.")
+                            break
 
-                        # Detect smiles within the face region
-                        smiles = smile_cascade.detectMultiScale(roi_gray, 1.8, 20)
+                        # Convert to grayscale for detection
+                        gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
+                        faces = face_cascade.detectMultiScale(gray, 1.3, 5)
+                        is_smiling = False
 
-                        # If at least one smile is detected
-                        if len(smiles) > 0:
-                            is_smiling = True
+                        # Draw detection rectangles on the frame
+                        processed_frame = frame.copy()
+                        for (x, y, w, h) in faces:
+                            roi_gray = gray[y:y + h, x:x + w]
+                            smiles = smile_cascade.detectMultiScale(roi_gray, 1.8, 20)
+                            
+                            if len(smiles) > 0:
+                                is_smiling = True
+                                cv2.rectangle(processed_frame, (x, y), (x + w, y + h), (255, 0, 0), 2)
+                                for (sx, sy, sw, sh) in smiles:
+                                    cv2.rectangle(processed_frame, (x + sx, y + sy), (x + sx + sw, y + sy + sh), (0, 255, 0), 2)
 
-                            # Draw rectangle around face and smile for debugging
-                            cv2.rectangle(frame, (x, y), (x + w, y + h), (255, 0, 0), 2)
-                            for (sx, sy, sw, sh) in smiles:
-                                cv2.rectangle(frame, (x + sx, y + sy), (x + sx + sw, y + sy + sh), (0, 255, 0), 2)
+                        self.detection_queue.put(("smile", is_smiling))
 
-                    # Update the shared variable
-                    self.detection_queue.put(("smile", is_smiling))
+                        # Resize to match in-game display (200x150)
+                        resized_frame = cv2.resize(processed_frame, (rec_width, rec_height))
+                        
+                        # Convert to RGB for Pygame display
+                        rgb_frame = cv2.cvtColor(resized_frame, cv2.COLOR_BGR2RGB)
+                        pygame_frame = pygame.surfarray.make_surface(rgb_frame)
+                        self.camera_frame = pygame_frame
 
-                    # Convert the OpenCV frame to a Pygame surface
-                    frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)  # Convert BGR to RGB
-                    frame = pygame.surfarray.make_surface(frame.transpose([1, 0, 2]))  # Transpose and convert to Pygame surface
+                        # Write the resized frame to the video file
+                        out.write(resized_frame)
 
-                    # Resize the frame to fit in the bottom-right corner of the game screen
-                    frame = pygame.transform.scale(frame, (200, 150))  # Adjust size as needed
+                        time.sleep(0.05)  # Prevent CPU overload
 
-                    # Store the frame for rendering in the main loop
-                    self.camera_frame = frame
+                    print("Recording stopped.")
+                    out.release()
+                    cap.release()
 
-                    # Don't max out CPU
-                    time.sleep(0.05)
-
-                # Clean up
-                cap.release()
-                cv2.destroyAllWindows()
+                except Exception as e:
+                    print(f"Recording error: {e}")
+                    if 'out' in locals() and out.isOpened():
+                        out.release()
+                    if 'cap' in locals() and cap.isOpened():
+                        cap.release()                          # Ensure video is saved
+                    cv2.destroyAllWindows()
 
             # Start smile detection in a separate thread
+            self.camera_enabled = True
             thread = threading.Thread(target=smile_detection_thread)
             thread.daemon = True
             thread.start()
@@ -242,7 +270,7 @@ class ExpressionPlatformer:
             print(f"Error setting up smile detection: {e}")
             self.camera_enabled = False
             return False
-
+    
     def run(self):
         # Setup detection systems
         print("Setting up smile detection...")
@@ -308,6 +336,7 @@ class ExpressionPlatformer:
                 # Check for game over
                 self.game_over = self.collisions()
                 if self.game_over:
+                    self.camera_enabled = False 
                     return True  # Signal game over
 
             else:  # Game over screen
@@ -325,11 +354,15 @@ class ExpressionPlatformer:
                 if self.score == 0:
                     self.screen.blit(self.start_game, self.start_game_rect)
                 else:
-                    self.screen.blit(score_message, score_message_rect)
-                    self.screen.blit(high_score_text, high_score_text_rect)
-
+                    score_msg = self.testFont.render(f"Score: {self.score}", False, (111, 196, 169))
+                    self.screen.blit(score_msg, (self.WIDTH // 2 - 100, self.HEIGHT // 2 + 100))
+                    high_score = self.testFont.render(f"High: {self.high_score}", False, (111, 196, 169))
+                    self.screen.blit(high_score, (self.WIDTH // 2 + 100, self.HEIGHT // 2 + 100))
                 # Still display detection status on game over screen
                 self.draw_detection_status()
 
             pygame.display.update()
-            self.clock.tick(60) 
+            self.clock.tick(60)
+            score_message = self.testFont.render(f"Your Score: {self.score}", False, (111, 196, 169))
+            score_message_rect = score_message.get_rect(center=(self.WIDTH // 2, self.HEIGHT // 2 + 100))
+            self.screen.blit(score_message, score_message_rect)

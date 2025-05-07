@@ -2,7 +2,12 @@ import pygame
 import speech_recognition as sr
 import random
 import pyaudio
+import numpy as np
 import json
+import time
+import os
+
+
 from vosk import Model, KaldiRecognizer
 from fuzzywuzzy import process
 class Fighter():
@@ -31,6 +36,9 @@ class Fighter():
         self.is_bot = is_bot  # Set bot flag
         self.bot_attack_multiplier = 3
         self.bot_action_timer = 0
+        self.voice_log = []  # Store all entries here
+        self.log_file = "voice_log.json"
+        
         # Voice recognition setup for player 1
         if self.player == 1:
             self.model = Model("vosk-model-small-en-us-0.15")  # Load offline model
@@ -40,6 +48,22 @@ class Fighter():
                                         input=True, frames_per_buffer=4096)
             self.stream.start_stream()
             self.voice_command = None    # Stores the last recognized command
+    
+    
+       
+    def log_voice_event(self, word, intensity, confidence):
+        entry = {
+            "timestamp": time.time(),
+            "word": word,
+            "intensity_dB": intensity,
+            "confidence": confidence
+        }
+        self.voice_log.append(entry)
+
+        # Write to JSON file (overwrite or append based on your preference)
+        with open(self.log_file, "w") as f:
+            json.dump(self.voice_log, f, indent=2)
+            
 
     def load_images(self, sprite_sheet, animation_steps):
         animation_list = []
@@ -51,10 +75,19 @@ class Fighter():
             animation_list.append(temp_img_list)
         return animation_list
 
-    
+    def get_intensity(self, audio_block):
+        """Compute the intensity (in dB) from the audio data."""
+        # Convert bytes to int16 numpy array
+        audio_np = np.frombuffer(audio_block, dtype=np.int16)
+        
+        if len(audio_np) == 0:
+            return -float('inf')  # Handle silence or zero input
+
+        rms = np.sqrt(np.mean(np.square(audio_np)))  # Root Mean Square
+        db = 20 * np.log10(rms + 1e-6)  # Convert to decibels (avoid log(0))
+        return db
 
    
-
     def listen_for_commands(self):
         """Listens for voice commands using Vosk and updates movement accordingly."""
         data = self.stream.read(4096, exception_on_overflow=False)
@@ -64,13 +97,16 @@ class Fighter():
             command = result.get("text", "").lower()
             print("Recognized Text:", command)  # Debugging: Print the recognized text
 
+            intensity = self.get_intensity(data)  # Get intensity of the audio block
+            print(f"Audio Intensity: {intensity:.2f} dB")  # Print intensity for the detected audio block
+            
             # Define valid commands
             valid_commands = ["left", "right", "jump", "attack"]
 
             # Step 1: Check for exact matches first
             for valid_command in valid_commands:
                 if valid_command in command:
-                    print(f"Recognized Command (Exact Match): {valid_command}")
+                    print(f"Recognized Command (Exact Match): {valid_command}| Intensity: {intensity:.2f} dB")
                     self.voice_command = valid_command
                     return
 
@@ -80,8 +116,9 @@ class Fighter():
 
             # Set a confidence threshold for fuzzy matching (e.g., 70%)
             if match_confidence >= 40:
-                print(f"Recognized Command (Fuzzy Match): {best_match} (Match Confidence: {match_confidence})")
+                print(f"Recognized Command (Fuzzy Match): {best_match} | Intensity: {intensity:.2f} dB (Confidence: {match_confidence})")
                 self.voice_command = best_match
+                self.log_voice_event(best_match, intensity, match_confidence) 
                 return
 
             # Step 3: Fallback to keyword spotting
@@ -89,11 +126,13 @@ class Fighter():
                 if word in valid_commands:
                     print(f"Recognized Command (Keyword Spotting): {word}")
                     self.voice_command = word
+                    self.log_voice_event(word, intensity, 100) 
                     return
-
+                
             # If no valid command is detected
             print("No valid command detected.")
             self.voice_command = None  # Reset if no valid command is found  # Reset if no valid command is found
+            
 
     def move(self, screen_width, screen_height, surface, target, round_over):
         SPEED = 10

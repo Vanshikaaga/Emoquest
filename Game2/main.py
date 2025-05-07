@@ -7,7 +7,7 @@ class BrawlerGame:
         self.screen = screen
         self.SCREEN_WIDTH, self.SCREEN_HEIGHT = screen.get_width(), screen.get_height()
         self.clock = pygame.time.Clock()
-        self.FPS = 60
+        self.FPS = 20
 
         # Define colours
         self.RED = (255, 0, 0)

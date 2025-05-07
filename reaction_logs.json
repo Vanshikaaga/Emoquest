@@ -1,0 +1,93 @@
+[
+    {
+        "spawn_time": 1746565670.7928438,
+        "click_time": 1746565672.0606146,
+        "reaction_time": 1.267770767211914,
+        "clicked": true,
+        "target": "mole",
+        "object_x": 488,
+        "object_y": 634,
+        "object_width": 100,
+        "object_height": 100,
+        "click_x": 546,
+        "click_y": 698
+    },
+    {
+        "spawn_time": 1746565671.2905056,
+        "click_time": null,
+        "reaction_time": null,
+        "clicked": false,
+        "target": "rat",
+        "object_x": 654,
+        "object_y": 468,
+        "object_width": 100,
+        "object_height": 100,
+        "click_x": null,
+        "click_y": null
+    },
+    {
+        "spawn_time": 1746565672.795973,
+        "click_time": null,
+        "reaction_time": null,
+        "clicked": false,
+        "target": "rat",
+        "object_x": 322,
+        "object_y": 634,
+        "object_width": 100,
+        "object_height": 100,
+        "click_x": null,
+        "click_y": null
+    },
+    {
+        "spawn_time": 1746565674.3062332,
+        "click_time": null,
+        "reaction_time": null,
+        "clicked": false,
+        "target": "rat",
+        "object_x": 488,
+        "object_y": 136,
+        "object_width": 100,
+        "object_height": 100,
+        "click_x": null,
+        "click_y": null
+    },
+    {
+        "spawn_time": 1746565675.177909,
+        "click_time": null,
+        "reaction_time": null,
+        "clicked": false,
+        "target": "mole",
+        "object_x": 322,
+        "object_y": 136,
+        "object_width": 100,
+        "object_height": 100,
+        "click_x": null,
+        "click_y": null
+    },
+    {
+        "spawn_time": 1746565675.8226588,
+        "click_time": null,
+        "reaction_time": null,
+        "clicked": false,
+        "target": "rat",
+        "object_x": 654,
+        "object_y": 468,
+        "object_width": 100,
+        "object_height": 100,
+        "click_x": null,
+        "click_y": null
+    },
+    {
+        "spawn_time": 1746565677.338272,
+        "click_time": null,
+        "reaction_time": null,
+        "clicked": false,
+        "target": "rat",
+        "object_x": 322,
+        "object_y": 468,
+        "object_width": 100,
+        "object_height": 100,
+        "click_x": null,
+        "click_y": null
+    }
+]

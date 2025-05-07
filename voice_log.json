@@ -1,0 +1,26 @@
+[
+  {
+    "timestamp": 1746565641.5535626,
+    "word": "left",
+    "intensity_dB": -4.273833365565919,
+    "confidence": 45
+  },
+  {
+    "timestamp": 1746565653.0856133,
+    "word": "left",
+    "intensity_dB": -5.858249784333315,
+    "confidence": 45
+  },
+  {
+    "timestamp": 1746565658.2092366,
+    "word": "left",
+    "intensity_dB": -4.3888086487082045,
+    "confidence": 45
+  },
+  {
+    "timestamp": 1746565664.8892949,
+    "word": "right",
+    "intensity_dB": -3.975147272315181,
+    "confidence": 40
+  }
+]

@@ -1,0 +1,2198 @@
+[
+    {
+        "timestamp": 1745930614.584409,
+        "smile_confidence": 0,
+        "emotion_class": "sad",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930615.735819,
+        "smile_confidence": 0,
+        "emotion_class": "fear",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930615.8675013,
+        "smile_confidence": 0,
+        "emotion_class": "fear",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930615.9730203,
+        "smile_confidence": 100,
+        "emotion_class": "fear",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930616.1127057,
+        "smile_confidence": 0,
+        "emotion_class": "fear",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930616.2440326,
+        "smile_confidence": 0,
+        "emotion_class": "fear",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930616.3607771,
+        "smile_confidence": 0,
+        "emotion_class": "fear",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930616.4709325,
+        "smile_confidence": 0,
+        "emotion_class": "fear",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930616.5784612,
+        "smile_confidence": 0,
+        "emotion_class": "fear",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930616.686029,
+        "smile_confidence": 0,
+        "emotion_class": "fear",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930616.8149958,
+        "smile_confidence": 100,
+        "emotion_class": "fear",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930616.914679,
+        "smile_confidence": 0,
+        "emotion_class": "fear",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930617.0066612,
+        "smile_confidence": 100,
+        "emotion_class": "fear",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930617.1203997,
+        "smile_confidence": 0,
+        "emotion_class": "fear",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930617.2256367,
+        "smile_confidence": 0,
+        "emotion_class": "fear",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930617.3200243,
+        "smile_confidence": 100,
+        "emotion_class": "fear",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930617.434274,
+        "smile_confidence": 0,
+        "emotion_class": "sad",
+        "gaze_direction": "Looking left"
+    },
+    {
+        "timestamp": 1745930617.599125,
+        "smile_confidence": 100,
+        "emotion_class": "sad",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930617.7042236,
+        "smile_confidence": 100,
+        "emotion_class": "sad",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930617.809854,
+        "smile_confidence": 100,
+        "emotion_class": "sad",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930617.935781,
+        "smile_confidence": 100,
+        "emotion_class": "sad",
+        "gaze_direction": "Looking left"
+    },
+    {
+        "timestamp": 1745930618.083651,
+        "smile_confidence": 0,
+        "emotion_class": "fear",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930618.1930287,
+        "smile_confidence": 0,
+        "emotion_class": "fear",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930618.310344,
+        "smile_confidence": 0,
+        "emotion_class": "fear",
+        "gaze_direction": "Looking left"
+    },
+    {
+        "timestamp": 1745930618.4065797,
+        "smile_confidence": 100,
+        "emotion_class": "neutral",
+        "gaze_direction": "Looking left"
+    },
+    {
+        "timestamp": 1745930618.5121944,
+        "smile_confidence": 100,
+        "emotion_class": "sad",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930618.6575818,
+        "smile_confidence": 100,
+        "emotion_class": "happy",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930618.7574706,
+        "smile_confidence": 100,
+        "emotion_class": "neutral",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930618.8710268,
+        "smile_confidence": 100,
+        "emotion_class": "neutral",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930618.9800863,
+        "smile_confidence": 0,
+        "emotion_class": "neutral",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930619.111385,
+        "smile_confidence": 100,
+        "emotion_class": "happy",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930619.238591,
+        "smile_confidence": 0,
+        "emotion_class": "happy",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930619.3561912,
+        "smile_confidence": 100,
+        "emotion_class": "happy",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930619.4596076,
+        "smile_confidence": 0,
+        "emotion_class": "sad",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930619.6021283,
+        "smile_confidence": 0,
+        "emotion_class": "happy",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930619.7257245,
+        "smile_confidence": 100,
+        "emotion_class": "happy",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930619.8421748,
+        "smile_confidence": 100,
+        "emotion_class": "neutral",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930619.9534235,
+        "smile_confidence": 100,
+        "emotion_class": "sad",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930620.0734656,
+        "smile_confidence": 100,
+        "emotion_class": "sad",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930620.186315,
+        "smile_confidence": 100,
+        "emotion_class": "neutral",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930620.3081586,
+        "smile_confidence": 100,
+        "emotion_class": "sad",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930620.4171174,
+        "smile_confidence": 100,
+        "emotion_class": "sad",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930620.5347154,
+        "smile_confidence": 100,
+        "emotion_class": "sad",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930620.6424787,
+        "smile_confidence": 0,
+        "emotion_class": "sad",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930620.7451024,
+        "smile_confidence": 0,
+        "emotion_class": "sad",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930620.8746629,
+        "smile_confidence": 100,
+        "emotion_class": "sad",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930620.997511,
+        "smile_confidence": 0,
+        "emotion_class": "sad",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930621.1185668,
+        "smile_confidence": 100,
+        "emotion_class": "sad",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930621.2233443,
+        "smile_confidence": 0,
+        "emotion_class": "neutral",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930621.3414097,
+        "smile_confidence": 100,
+        "emotion_class": "neutral",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930621.4420052,
+        "smile_confidence": 0,
+        "emotion_class": "fear",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930621.5524318,
+        "smile_confidence": 0,
+        "emotion_class": "fear",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930621.657794,
+        "smile_confidence": 0,
+        "emotion_class": "surprise",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930621.7658923,
+        "smile_confidence": 0,
+        "emotion_class": "surprise",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930621.858067,
+        "smile_confidence": 100,
+        "emotion_class": "surprise",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930621.974399,
+        "smile_confidence": 100,
+        "emotion_class": "surprise",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930622.126092,
+        "smile_confidence": 0,
+        "emotion_class": "surprise",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930622.2149663,
+        "smile_confidence": 0,
+        "emotion_class": "surprise",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930622.3368595,
+        "smile_confidence": 100,
+        "emotion_class": "surprise",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930622.4531581,
+        "smile_confidence": 100,
+        "emotion_class": "surprise",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930622.5594819,
+        "smile_confidence": 0,
+        "emotion_class": "neutral",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930622.6930025,
+        "smile_confidence": 100,
+        "emotion_class": "sad",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930622.8315501,
+        "smile_confidence": 0,
+        "emotion_class": "sad",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930622.9690692,
+        "smile_confidence": 100,
+        "emotion_class": "fear",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930623.0852706,
+        "smile_confidence": 0,
+        "emotion_class": "Detecting...",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930623.1300383,
+        "smile_confidence": 100,
+        "emotion_class": "sad",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930623.2561986,
+        "smile_confidence": 0,
+        "emotion_class": "sad",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930623.3846285,
+        "smile_confidence": 100,
+        "emotion_class": "sad",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930623.5149648,
+        "smile_confidence": 0,
+        "emotion_class": "sad",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930623.6474957,
+        "smile_confidence": 0,
+        "emotion_class": "sad",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930623.7700002,
+        "smile_confidence": 100,
+        "emotion_class": "sad",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930623.9042275,
+        "smile_confidence": 100,
+        "emotion_class": "sad",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930624.0326092,
+        "smile_confidence": 100,
+        "emotion_class": "sad",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930624.1597223,
+        "smile_confidence": 100,
+        "emotion_class": "sad",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930624.2948778,
+        "smile_confidence": 100,
+        "emotion_class": "sad",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930624.4218678,
+        "smile_confidence": 100,
+        "emotion_class": "sad",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930624.5466437,
+        "smile_confidence": 0,
+        "emotion_class": "sad",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930624.6888628,
+        "smile_confidence": 100,
+        "emotion_class": "sad",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930624.8285954,
+        "smile_confidence": 100,
+        "emotion_class": "sad",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930624.9798038,
+        "smile_confidence": 100,
+        "emotion_class": "fear",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930625.1277697,
+        "smile_confidence": 100,
+        "emotion_class": "fear",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930625.2461517,
+        "smile_confidence": 100,
+        "emotion_class": "fear",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930625.371878,
+        "smile_confidence": 100,
+        "emotion_class": "fear",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930625.497262,
+        "smile_confidence": 100,
+        "emotion_class": "fear",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930625.6354184,
+        "smile_confidence": 100,
+        "emotion_class": "fear",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930625.7647412,
+        "smile_confidence": 100,
+        "emotion_class": "sad",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930625.9035258,
+        "smile_confidence": 100,
+        "emotion_class": "sad",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930626.025592,
+        "smile_confidence": 100,
+        "emotion_class": "sad",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930626.1535575,
+        "smile_confidence": 100,
+        "emotion_class": "sad",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930626.3054664,
+        "smile_confidence": 100,
+        "emotion_class": "sad",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930626.4193559,
+        "smile_confidence": 100,
+        "emotion_class": "sad",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930626.5546267,
+        "smile_confidence": 100,
+        "emotion_class": "sad",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930626.6931286,
+        "smile_confidence": 100,
+        "emotion_class": "sad",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930626.8057623,
+        "smile_confidence": 100,
+        "emotion_class": "sad",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930626.9415724,
+        "smile_confidence": 100,
+        "emotion_class": "sad",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930627.0791726,
+        "smile_confidence": 100,
+        "emotion_class": "sad",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930627.2374344,
+        "smile_confidence": 100,
+        "emotion_class": "sad",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930627.3658378,
+        "smile_confidence": 100,
+        "emotion_class": "sad",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930627.487772,
+        "smile_confidence": 100,
+        "emotion_class": "sad",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930627.597329,
+        "smile_confidence": 100,
+        "emotion_class": "sad",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930627.7118123,
+        "smile_confidence": 100,
+        "emotion_class": "sad",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930627.867172,
+        "smile_confidence": 100,
+        "emotion_class": "fear",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930628.0030737,
+        "smile_confidence": 0,
+        "emotion_class": "fear",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930628.1290731,
+        "smile_confidence": 100,
+        "emotion_class": "fear",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930628.2694643,
+        "smile_confidence": 100,
+        "emotion_class": "neutral",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930628.3804424,
+        "smile_confidence": 100,
+        "emotion_class": "neutral",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930628.4903018,
+        "smile_confidence": 0,
+        "emotion_class": "sad",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930628.6228137,
+        "smile_confidence": 100,
+        "emotion_class": "sad",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930628.7566087,
+        "smile_confidence": 100,
+        "emotion_class": "neutral",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930628.8940105,
+        "smile_confidence": 0,
+        "emotion_class": "fear",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930629.013144,
+        "smile_confidence": 0,
+        "emotion_class": "fear",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930629.139705,
+        "smile_confidence": 100,
+        "emotion_class": "happy",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930629.2646408,
+        "smile_confidence": 100,
+        "emotion_class": "neutral",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930629.408462,
+        "smile_confidence": 0,
+        "emotion_class": "neutral",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930629.566762,
+        "smile_confidence": 0,
+        "emotion_class": "fear",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930629.7043624,
+        "smile_confidence": 0,
+        "emotion_class": "sad",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930629.8467178,
+        "smile_confidence": 0,
+        "emotion_class": "neutral",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930629.9897778,
+        "smile_confidence": 0,
+        "emotion_class": "sad",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930630.1298234,
+        "smile_confidence": 0,
+        "emotion_class": "sad",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930630.2544374,
+        "smile_confidence": 0,
+        "emotion_class": "sad",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930630.3992317,
+        "smile_confidence": 0,
+        "emotion_class": "sad",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930630.5516453,
+        "smile_confidence": 0,
+        "emotion_class": "sad",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930630.7064402,
+        "smile_confidence": 100,
+        "emotion_class": "sad",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930630.8499367,
+        "smile_confidence": 100,
+        "emotion_class": "sad",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930631.0266747,
+        "smile_confidence": 100,
+        "emotion_class": "sad",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930631.1677895,
+        "smile_confidence": 100,
+        "emotion_class": "sad",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930631.2933557,
+        "smile_confidence": 100,
+        "emotion_class": "sad",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930631.4496796,
+        "smile_confidence": 100,
+        "emotion_class": "sad",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930631.5864773,
+        "smile_confidence": 100,
+        "emotion_class": "sad",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930631.7357883,
+        "smile_confidence": 100,
+        "emotion_class": "sad",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930631.8879929,
+        "smile_confidence": 100,
+        "emotion_class": "sad",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930632.0472481,
+        "smile_confidence": 100,
+        "emotion_class": "sad",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930632.1813822,
+        "smile_confidence": 0,
+        "emotion_class": "sad",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930632.32727,
+        "smile_confidence": 100,
+        "emotion_class": "sad",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930632.4617286,
+        "smile_confidence": 0,
+        "emotion_class": "sad",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930632.5779696,
+        "smile_confidence": 100,
+        "emotion_class": "sad",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930632.732579,
+        "smile_confidence": 100,
+        "emotion_class": "sad",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930632.8761773,
+        "smile_confidence": 100,
+        "emotion_class": "sad",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930633.0292346,
+        "smile_confidence": 100,
+        "emotion_class": "sad",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930633.1837537,
+        "smile_confidence": 0,
+        "emotion_class": "sad",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930633.3472,
+        "smile_confidence": 100,
+        "emotion_class": "sad",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930633.508534,
+        "smile_confidence": 100,
+        "emotion_class": "sad",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930633.6575892,
+        "smile_confidence": 100,
+        "emotion_class": "sad",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930633.8184383,
+        "smile_confidence": 100,
+        "emotion_class": "sad",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930633.972855,
+        "smile_confidence": 100,
+        "emotion_class": "sad",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930634.1189096,
+        "smile_confidence": 100,
+        "emotion_class": "sad",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930634.2581887,
+        "smile_confidence": 100,
+        "emotion_class": "sad",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930634.3998601,
+        "smile_confidence": 100,
+        "emotion_class": "sad",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930634.535781,
+        "smile_confidence": 100,
+        "emotion_class": "sad",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930634.674922,
+        "smile_confidence": 100,
+        "emotion_class": "sad",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930634.8270035,
+        "smile_confidence": 100,
+        "emotion_class": "sad",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930634.9662852,
+        "smile_confidence": 100,
+        "emotion_class": "neutral",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930635.1087773,
+        "smile_confidence": 100,
+        "emotion_class": "happy",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930635.2662404,
+        "smile_confidence": 100,
+        "emotion_class": "sad",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930635.4020212,
+        "smile_confidence": 100,
+        "emotion_class": "angry",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930635.5107057,
+        "smile_confidence": 100,
+        "emotion_class": "angry",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930635.6394007,
+        "smile_confidence": 0,
+        "emotion_class": "fear",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930635.7672105,
+        "smile_confidence": 0,
+        "emotion_class": "angry",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930635.9274447,
+        "smile_confidence": 0,
+        "emotion_class": "happy",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930636.0588791,
+        "smile_confidence": 100,
+        "emotion_class": "neutral",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930636.213725,
+        "smile_confidence": 0,
+        "emotion_class": "fear",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930636.3286374,
+        "smile_confidence": 100,
+        "emotion_class": "happy",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930636.4600132,
+        "smile_confidence": 0,
+        "emotion_class": "happy",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930636.6013708,
+        "smile_confidence": 0,
+        "emotion_class": "sad",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930636.762231,
+        "smile_confidence": 0,
+        "emotion_class": "fear",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930636.895505,
+        "smile_confidence": 100,
+        "emotion_class": "fear",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930637.0190258,
+        "smile_confidence": 0,
+        "emotion_class": "fear",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930637.1430228,
+        "smile_confidence": 0,
+        "emotion_class": "fear",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930637.2663383,
+        "smile_confidence": 0,
+        "emotion_class": "fear",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930637.409506,
+        "smile_confidence": 100,
+        "emotion_class": "fear",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930637.5710075,
+        "smile_confidence": 0,
+        "emotion_class": "angry",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930637.7181911,
+        "smile_confidence": 100,
+        "emotion_class": "angry",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930637.8675923,
+        "smile_confidence": 100,
+        "emotion_class": "fear",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930638.0102563,
+        "smile_confidence": 100,
+        "emotion_class": "fear",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930638.1519248,
+        "smile_confidence": 100,
+        "emotion_class": "fear",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930638.2820916,
+        "smile_confidence": 0,
+        "emotion_class": "fear",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930638.4013963,
+        "smile_confidence": 0,
+        "emotion_class": "fear",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930638.5275767,
+        "smile_confidence": 100,
+        "emotion_class": "angry",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930638.6724362,
+        "smile_confidence": 0,
+        "emotion_class": "angry",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930638.8029633,
+        "smile_confidence": 0,
+        "emotion_class": "angry",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930638.970353,
+        "smile_confidence": 0,
+        "emotion_class": "angry",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930639.1030939,
+        "smile_confidence": 0,
+        "emotion_class": "fear",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930639.2391648,
+        "smile_confidence": 100,
+        "emotion_class": "fear",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930639.3679786,
+        "smile_confidence": 100,
+        "emotion_class": "fear",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930639.5011556,
+        "smile_confidence": 0,
+        "emotion_class": "fear",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930639.6230567,
+        "smile_confidence": 100,
+        "emotion_class": "fear",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930639.761877,
+        "smile_confidence": 100,
+        "emotion_class": "fear",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930639.9226816,
+        "smile_confidence": 100,
+        "emotion_class": "fear",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930640.0537088,
+        "smile_confidence": 100,
+        "emotion_class": "fear",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930640.1732175,
+        "smile_confidence": 100,
+        "emotion_class": "fear",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930640.561023,
+        "smile_confidence": 100,
+        "emotion_class": "fear",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930640.7184067,
+        "smile_confidence": 100,
+        "emotion_class": "fear",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930640.8266268,
+        "smile_confidence": 0,
+        "emotion_class": "fear",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930640.9527028,
+        "smile_confidence": 0,
+        "emotion_class": "fear",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930641.0762293,
+        "smile_confidence": 0,
+        "emotion_class": "fear",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930641.2042637,
+        "smile_confidence": 100,
+        "emotion_class": "fear",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930641.3462753,
+        "smile_confidence": 0,
+        "emotion_class": "fear",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930641.4809618,
+        "smile_confidence": 100,
+        "emotion_class": "fear",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930641.6079533,
+        "smile_confidence": 100,
+        "emotion_class": "fear",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930641.743238,
+        "smile_confidence": 0,
+        "emotion_class": "fear",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930641.8893092,
+        "smile_confidence": 0,
+        "emotion_class": "fear",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930642.025207,
+        "smile_confidence": 0,
+        "emotion_class": "fear",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930642.169649,
+        "smile_confidence": 0,
+        "emotion_class": "fear",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930642.3008008,
+        "smile_confidence": 100,
+        "emotion_class": "fear",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930642.4315133,
+        "smile_confidence": 100,
+        "emotion_class": "sad",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930642.567165,
+        "smile_confidence": 0,
+        "emotion_class": "fear",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930642.7065294,
+        "smile_confidence": 0,
+        "emotion_class": "neutral",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930642.85809,
+        "smile_confidence": 100,
+        "emotion_class": "sad",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930642.9975314,
+        "smile_confidence": 100,
+        "emotion_class": "neutral",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930643.1296394,
+        "smile_confidence": 0,
+        "emotion_class": "neutral",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930643.2718034,
+        "smile_confidence": 0,
+        "emotion_class": "sad",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930643.3971906,
+        "smile_confidence": 0,
+        "emotion_class": "neutral",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930643.5328841,
+        "smile_confidence": 0,
+        "emotion_class": "sad",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930643.6455536,
+        "smile_confidence": 100,
+        "emotion_class": "sad",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930643.7913442,
+        "smile_confidence": 0,
+        "emotion_class": "sad",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930643.917073,
+        "smile_confidence": 100,
+        "emotion_class": "happy",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930644.0600054,
+        "smile_confidence": 100,
+        "emotion_class": "happy",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930644.1882741,
+        "smile_confidence": 100,
+        "emotion_class": "happy",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930644.3358593,
+        "smile_confidence": 0,
+        "emotion_class": "sad",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930644.4734597,
+        "smile_confidence": 0,
+        "emotion_class": "sad",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930644.5829031,
+        "smile_confidence": 0,
+        "emotion_class": "sad",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930644.714674,
+        "smile_confidence": 100,
+        "emotion_class": "sad",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930644.8519938,
+        "smile_confidence": 0,
+        "emotion_class": "angry",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930644.9716492,
+        "smile_confidence": 0,
+        "emotion_class": "angry",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930645.1104379,
+        "smile_confidence": 0,
+        "emotion_class": "sad",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930645.244513,
+        "smile_confidence": 0,
+        "emotion_class": "sad",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930645.3588598,
+        "smile_confidence": 100,
+        "emotion_class": "angry",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930645.4834485,
+        "smile_confidence": 0,
+        "emotion_class": "angry",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930645.6413202,
+        "smile_confidence": 100,
+        "emotion_class": "angry",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930645.7649782,
+        "smile_confidence": 0,
+        "emotion_class": "angry",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930645.89555,
+        "smile_confidence": 100,
+        "emotion_class": "sad",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930646.0468142,
+        "smile_confidence": 100,
+        "emotion_class": "angry",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930646.1733325,
+        "smile_confidence": 0,
+        "emotion_class": "angry",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930646.3261883,
+        "smile_confidence": 0,
+        "emotion_class": "angry",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930646.4619105,
+        "smile_confidence": 0,
+        "emotion_class": "angry",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930646.6041162,
+        "smile_confidence": 0,
+        "emotion_class": "angry",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930646.742158,
+        "smile_confidence": 0,
+        "emotion_class": "angry",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930646.8616252,
+        "smile_confidence": 0,
+        "emotion_class": "angry",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930646.991542,
+        "smile_confidence": 100,
+        "emotion_class": "angry",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930647.1343567,
+        "smile_confidence": 0,
+        "emotion_class": "happy",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930647.2803967,
+        "smile_confidence": 0,
+        "emotion_class": "angry",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930647.4234428,
+        "smile_confidence": 0,
+        "emotion_class": "neutral",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930647.5710237,
+        "smile_confidence": 100,
+        "emotion_class": "neutral",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930647.7264762,
+        "smile_confidence": 0,
+        "emotion_class": "neutral",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930647.8923495,
+        "smile_confidence": 0,
+        "emotion_class": "neutral",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930648.0157878,
+        "smile_confidence": 0,
+        "emotion_class": "angry",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930648.1597195,
+        "smile_confidence": 0,
+        "emotion_class": "fear",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930648.3346062,
+        "smile_confidence": 0,
+        "emotion_class": "fear",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930648.473365,
+        "smile_confidence": 0,
+        "emotion_class": "fear",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930648.6460733,
+        "smile_confidence": 0,
+        "emotion_class": "fear",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930648.792942,
+        "smile_confidence": 0,
+        "emotion_class": "fear",
+        "gaze_direction": "Looking center"
+    },
+    {
+        "timestamp": 1745930648.944866,
+        "smile_confidence": 0,
+        "emotion_class": "fear",
+        "gaze_direction": "Looking center"
+    },
+    {
+        "timestamp": 1745930649.094625,
+        "smile_confidence": 100,
+        "emotion_class": "fear",
+        "gaze_direction": "Looking center"
+    },
+    {
+        "timestamp": 1745930649.226026,
+        "smile_confidence": 100,
+        "emotion_class": "neutral",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930649.34675,
+        "smile_confidence": 100,
+        "emotion_class": "neutral",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930649.5128322,
+        "smile_confidence": 100,
+        "emotion_class": "fear",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930649.6659064,
+        "smile_confidence": 100,
+        "emotion_class": "sad",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930649.8226435,
+        "smile_confidence": 0,
+        "emotion_class": "sad",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930649.9660232,
+        "smile_confidence": 0,
+        "emotion_class": "neutral",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930650.1028097,
+        "smile_confidence": 0,
+        "emotion_class": "neutral",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930650.2319689,
+        "smile_confidence": 100,
+        "emotion_class": "fear",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930650.3668442,
+        "smile_confidence": 0,
+        "emotion_class": "angry",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930650.5093458,
+        "smile_confidence": 0,
+        "emotion_class": "neutral",
+        "gaze_direction": "Looking center"
+    },
+    {
+        "timestamp": 1745930650.6313922,
+        "smile_confidence": 0,
+        "emotion_class": "sad",
+        "gaze_direction": "Looking center"
+    },
+    {
+        "timestamp": 1745930650.7783937,
+        "smile_confidence": 0,
+        "emotion_class": "fear",
+        "gaze_direction": "Looking center"
+    },
+    {
+        "timestamp": 1745930650.9819918,
+        "smile_confidence": 0,
+        "emotion_class": "neutral",
+        "gaze_direction": "Looking center"
+    },
+    {
+        "timestamp": 1745930651.2320995,
+        "smile_confidence": 100,
+        "emotion_class": "neutral",
+        "gaze_direction": "Looking center"
+    },
+    {
+        "timestamp": 1745930651.4815807,
+        "smile_confidence": 0,
+        "emotion_class": "neutral",
+        "gaze_direction": "Looking center"
+    },
+    {
+        "timestamp": 1745930651.7092395,
+        "smile_confidence": 0,
+        "emotion_class": "neutral",
+        "gaze_direction": "Looking center"
+    },
+    {
+        "timestamp": 1745930651.9472716,
+        "smile_confidence": 0,
+        "emotion_class": "fear",
+        "gaze_direction": "Looking center"
+    },
+    {
+        "timestamp": 1745930652.1630054,
+        "smile_confidence": 0,
+        "emotion_class": "fear",
+        "gaze_direction": "Looking center"
+    },
+    {
+        "timestamp": 1745930652.3730452,
+        "smile_confidence": 0,
+        "emotion_class": "neutral",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930652.5463824,
+        "smile_confidence": 100,
+        "emotion_class": "fear",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930652.7313585,
+        "smile_confidence": 0,
+        "emotion_class": "fear",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930652.9299881,
+        "smile_confidence": 100,
+        "emotion_class": "fear",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930653.1597104,
+        "smile_confidence": 0,
+        "emotion_class": "fear",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930653.384584,
+        "smile_confidence": 100,
+        "emotion_class": "fear",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930653.6639872,
+        "smile_confidence": 0,
+        "emotion_class": "fear",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930653.931675,
+        "smile_confidence": 100,
+        "emotion_class": "fear",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930654.1903684,
+        "smile_confidence": 0,
+        "emotion_class": "fear",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930654.4351776,
+        "smile_confidence": 0,
+        "emotion_class": "fear",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930654.7169118,
+        "smile_confidence": 0,
+        "emotion_class": "fear",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930654.9316137,
+        "smile_confidence": 0,
+        "emotion_class": "fear",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930655.208174,
+        "smile_confidence": 0,
+        "emotion_class": "fear",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930655.4531906,
+        "smile_confidence": 100,
+        "emotion_class": "fear",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930655.7093015,
+        "smile_confidence": 0,
+        "emotion_class": "fear",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930655.9535675,
+        "smile_confidence": 0,
+        "emotion_class": "fear",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930656.1541033,
+        "smile_confidence": 100,
+        "emotion_class": "fear",
+        "gaze_direction": "Looking center"
+    },
+    {
+        "timestamp": 1745930656.4052896,
+        "smile_confidence": 100,
+        "emotion_class": "fear",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930656.586027,
+        "smile_confidence": 0,
+        "emotion_class": "fear",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930656.8527718,
+        "smile_confidence": 0,
+        "emotion_class": "fear",
+        "gaze_direction": "Looking left"
+    },
+    {
+        "timestamp": 1745930657.1534245,
+        "smile_confidence": 100,
+        "emotion_class": "fear",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930657.3600004,
+        "smile_confidence": 0,
+        "emotion_class": "fear",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930657.5230482,
+        "smile_confidence": 0,
+        "emotion_class": "angry",
+        "gaze_direction": "Looking center"
+    },
+    {
+        "timestamp": 1745930657.7468746,
+        "smile_confidence": 100,
+        "emotion_class": "fear",
+        "gaze_direction": "Looking center"
+    },
+    {
+        "timestamp": 1745930658.0179753,
+        "smile_confidence": 0,
+        "emotion_class": "fear",
+        "gaze_direction": "Looking center"
+    },
+    {
+        "timestamp": 1745930658.2907794,
+        "smile_confidence": 100,
+        "emotion_class": "fear",
+        "gaze_direction": "Looking center"
+    },
+    {
+        "timestamp": 1745930658.5956645,
+        "smile_confidence": 0,
+        "emotion_class": "angry",
+        "gaze_direction": "Looking left"
+    },
+    {
+        "timestamp": 1745930658.7852736,
+        "smile_confidence": 0,
+        "emotion_class": "angry",
+        "gaze_direction": "Looking center"
+    },
+    {
+        "timestamp": 1745930659.0293918,
+        "smile_confidence": 100,
+        "emotion_class": "angry",
+        "gaze_direction": "Looking left"
+    },
+    {
+        "timestamp": 1745930659.247324,
+        "smile_confidence": 0,
+        "emotion_class": "angry",
+        "gaze_direction": "Looking center"
+    },
+    {
+        "timestamp": 1745930659.4734576,
+        "smile_confidence": 0,
+        "emotion_class": "fear",
+        "gaze_direction": "Looking center"
+    },
+    {
+        "timestamp": 1745930659.7379766,
+        "smile_confidence": 100,
+        "emotion_class": "fear",
+        "gaze_direction": "Looking center"
+    },
+    {
+        "timestamp": 1745930659.974427,
+        "smile_confidence": 100,
+        "emotion_class": "fear",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930660.2583814,
+        "smile_confidence": 100,
+        "emotion_class": "fear",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930660.502017,
+        "smile_confidence": 100,
+        "emotion_class": "fear",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930660.6733744,
+        "smile_confidence": 0,
+        "emotion_class": "fear",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930660.9421608,
+        "smile_confidence": 0,
+        "emotion_class": "fear",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930661.2336245,
+        "smile_confidence": 100,
+        "emotion_class": "fear",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930661.4720137,
+        "smile_confidence": 0,
+        "emotion_class": "fear",
+        "gaze_direction": "Looking left"
+    },
+    {
+        "timestamp": 1745930661.7753353,
+        "smile_confidence": 100,
+        "emotion_class": "fear",
+        "gaze_direction": "Looking left"
+    },
+    {
+        "timestamp": 1745930662.0639179,
+        "smile_confidence": 100,
+        "emotion_class": "happy",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930662.366378,
+        "smile_confidence": 0,
+        "emotion_class": "fear",
+        "gaze_direction": "Looking left"
+    },
+    {
+        "timestamp": 1745930662.6075485,
+        "smile_confidence": 100,
+        "emotion_class": "fear",
+        "gaze_direction": "Looking left"
+    },
+    {
+        "timestamp": 1745930662.9098494,
+        "smile_confidence": 0,
+        "emotion_class": "fear",
+        "gaze_direction": "Looking left"
+    },
+    {
+        "timestamp": 1745930663.1657267,
+        "smile_confidence": 100,
+        "emotion_class": "fear",
+        "gaze_direction": "Looking left"
+    },
+    {
+        "timestamp": 1745930663.4468756,
+        "smile_confidence": 100,
+        "emotion_class": "fear",
+        "gaze_direction": "Looking left"
+    },
+    {
+        "timestamp": 1745930663.7519727,
+        "smile_confidence": 100,
+        "emotion_class": "angry",
+        "gaze_direction": "Looking left"
+    },
+    {
+        "timestamp": 1745930664.077949,
+        "smile_confidence": 100,
+        "emotion_class": "angry",
+        "gaze_direction": "Looking left"
+    },
+    {
+        "timestamp": 1745930664.297611,
+        "smile_confidence": 0,
+        "emotion_class": "fear",
+        "gaze_direction": "Looking left"
+    },
+    {
+        "timestamp": 1745930664.5609975,
+        "smile_confidence": 0,
+        "emotion_class": "sad",
+        "gaze_direction": "Looking left"
+    },
+    {
+        "timestamp": 1745930664.793427,
+        "smile_confidence": 100,
+        "emotion_class": "fear",
+        "gaze_direction": "Looking left"
+    },
+    {
+        "timestamp": 1745930665.061004,
+        "smile_confidence": 100,
+        "emotion_class": "angry",
+        "gaze_direction": "Looking left"
+    },
+    {
+        "timestamp": 1745930665.2715497,
+        "smile_confidence": 100,
+        "emotion_class": "fear",
+        "gaze_direction": "Looking left"
+    },
+    {
+        "timestamp": 1745930665.5253427,
+        "smile_confidence": 100,
+        "emotion_class": "fear",
+        "gaze_direction": "Looking center"
+    },
+    {
+        "timestamp": 1745930665.7733674,
+        "smile_confidence": 0,
+        "emotion_class": "neutral",
+        "gaze_direction": "Looking center"
+    },
+    {
+        "timestamp": 1745930665.9928439,
+        "smile_confidence": 100,
+        "emotion_class": "sad",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930666.1925485,
+        "smile_confidence": 100,
+        "emotion_class": "sad",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930666.4011486,
+        "smile_confidence": 0,
+        "emotion_class": "sad",
+        "gaze_direction": "Looking center"
+    },
+    {
+        "timestamp": 1745930666.5969186,
+        "smile_confidence": 0,
+        "emotion_class": "sad",
+        "gaze_direction": "Looking center"
+    },
+    {
+        "timestamp": 1745930666.8005004,
+        "smile_confidence": 0,
+        "emotion_class": "sad",
+        "gaze_direction": "Looking center"
+    },
+    {
+        "timestamp": 1745930667.0431104,
+        "smile_confidence": 100,
+        "emotion_class": "sad",
+        "gaze_direction": "Looking center"
+    },
+    {
+        "timestamp": 1745930667.3062022,
+        "smile_confidence": 0,
+        "emotion_class": "sad",
+        "gaze_direction": "Looking center"
+    },
+    {
+        "timestamp": 1745930667.4696662,
+        "smile_confidence": 100,
+        "emotion_class": "happy",
+        "gaze_direction": "Looking center"
+    },
+    {
+        "timestamp": 1745930667.6988404,
+        "smile_confidence": 0,
+        "emotion_class": "sad",
+        "gaze_direction": "Looking center"
+    },
+    {
+        "timestamp": 1745930667.9475572,
+        "smile_confidence": 100,
+        "emotion_class": "sad",
+        "gaze_direction": "Looking center"
+    },
+    {
+        "timestamp": 1745930668.191427,
+        "smile_confidence": 100,
+        "emotion_class": "angry",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930668.42681,
+        "smile_confidence": 0,
+        "emotion_class": "sad",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930668.6803405,
+        "smile_confidence": 0,
+        "emotion_class": "fear",
+        "gaze_direction": "Looking center"
+    },
+    {
+        "timestamp": 1745930668.9120305,
+        "smile_confidence": 0,
+        "emotion_class": "angry",
+        "gaze_direction": "Looking center"
+    },
+    {
+        "timestamp": 1745930669.1704936,
+        "smile_confidence": 0,
+        "emotion_class": "fear",
+        "gaze_direction": "Looking center"
+    },
+    {
+        "timestamp": 1745930669.413831,
+        "smile_confidence": 100,
+        "emotion_class": "fear",
+        "gaze_direction": "Looking center"
+    },
+    {
+        "timestamp": 1745930669.6579416,
+        "smile_confidence": 100,
+        "emotion_class": "fear",
+        "gaze_direction": "Looking center"
+    },
+    {
+        "timestamp": 1745930669.9490159,
+        "smile_confidence": 100,
+        "emotion_class": "fear",
+        "gaze_direction": "Looking center"
+    },
+    {
+        "timestamp": 1745930670.267082,
+        "smile_confidence": 100,
+        "emotion_class": "fear",
+        "gaze_direction": "Looking center"
+    },
+    {
+        "timestamp": 1745930670.5711298,
+        "smile_confidence": 100,
+        "emotion_class": "fear",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930670.8976438,
+        "smile_confidence": 100,
+        "emotion_class": "fear",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930671.2059143,
+        "smile_confidence": 100,
+        "emotion_class": "fear",
+        "gaze_direction": "Looking left"
+    },
+    {
+        "timestamp": 1745930671.4761946,
+        "smile_confidence": 0,
+        "emotion_class": "fear",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930671.7714753,
+        "smile_confidence": 0,
+        "emotion_class": "fear",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930672.014507,
+        "smile_confidence": 100,
+        "emotion_class": "fear",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930672.1844451,
+        "smile_confidence": 100,
+        "emotion_class": "fear",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930672.348525,
+        "smile_confidence": 0,
+        "emotion_class": "fear",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930672.458098,
+        "smile_confidence": 0,
+        "emotion_class": "fear",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930672.5904732,
+        "smile_confidence": 100,
+        "emotion_class": "angry",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930672.7310786,
+        "smile_confidence": 100,
+        "emotion_class": "angry",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930672.8403842,
+        "smile_confidence": 100,
+        "emotion_class": "fear",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930672.933586,
+        "smile_confidence": 100,
+        "emotion_class": "fear",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930673.0724103,
+        "smile_confidence": 100,
+        "emotion_class": "angry",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930673.2020013,
+        "smile_confidence": 0,
+        "emotion_class": "angry",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930673.2909358,
+        "smile_confidence": 100,
+        "emotion_class": "angry",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930673.4137926,
+        "smile_confidence": 100,
+        "emotion_class": "angry",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930673.5457332,
+        "smile_confidence": 0,
+        "emotion_class": "fear",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930673.6743443,
+        "smile_confidence": 0,
+        "emotion_class": "fear",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930673.807813,
+        "smile_confidence": 0,
+        "emotion_class": "fear",
+        "gaze_direction": ""
+    },
+    {
+        "timestamp": 1745930673.943147,
+        "smile_confidence": 0,
+        "emotion_class": "sad",
+        "gaze_direction": ""
+    }
+]

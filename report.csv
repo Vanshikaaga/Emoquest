@@ -1,0 +1,6 @@
+Total Evade Events,Average Reaction Latency (s),Total Time in Safe Areas (s),Total Time (s),Safe Area Time (%),behavior_mean_reaction_time,behavior_std_reaction_time,behavior_fast_clicks_under_150ms,behavior_premature_clicks,behavior_impulsivity_index,behavior_misclicks_per_minute,behavior_click_accuracy_ratio,behavior_mean_click_distance,behavior_reaction_time_curve,behavior_startled_responses_count,behavior_max_false_positive_streak,behavior_predicted_behavior
+0,0,47.36,1.35,3508.15,0.870537519454956,,0,8,0.0,0.0,1.0,1.6814162167135063,"[0.870537519454956, NaN]",1,0,Focused
+0,nan,47.360000000000056,1.35,3508.148148148152
+nan,nan,0,9,0,0.0,0,0.0,[nan],0,0,Focused
+,,0,9,0,0.0,0,0.0,[NaN],0,0,Focused
+1.1839772860209148,0.027007516051744944,0,8,0.0,22.94931605300833,1.0,3.5454545454545454,[1.1839772860209148],3,1,Focused

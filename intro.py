@@ -1,10 +1,14 @@
 import pygame
-
+import os
+import subprocess
 # Import your mini-games
 from Game1.fear import RealmOfFear
 from Game2.main import BrawlerGame
 from Game3.mysterydoor import RealmOfPortals
 from Game4.smile import ExpressionPlatformer
+from Game1.analysis import run_analysis
+from Game3.analysis import run_behavior_analysis
+from graph import VoiceLogAnalyzer
 # Initialize Pygame
 pygame.init()
 
@@ -28,7 +32,7 @@ class GameManager:
         self.state = INTRO  # Start with the intro screen
         self.games = {}  # Don't initialize games here
         
-        self.game_order = [GAME1, GAME3, GAME4, GAME2]
+        self.game_order = [GAME4, GAME1, GAME2, GAME3]
         self.current_game_index = 0
 
     def initialize_game(self, game_name):
@@ -86,7 +90,21 @@ class GameManager:
                         self.state = END  # End screen after last game
             
             if self.state == END:
-                running = False  # Exit after finishing all games
+                
+                print("All games completed. Running analysis.")
+                run_analysis()
+                run_behavior_analysis()
+                analyzer = VoiceLogAnalyzer('voice_log.json')
+                analyzer.plot()
+                try:
+                    script_path = os.path.join('Game4', 'testdata.py')
+                    self.emotion_process = subprocess.Popen(['python', script_path])
+                    self.emotion_process.wait()  # Wait for the script to finish
+                    print("testdata.py script finished.")
+                except Exception as e:
+                    print(f"Error running testdata.py: {e}")
+                running = False
+                 # Exit after finishing all games
         
         pygame.quit()
 

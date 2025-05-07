@@ -1,0 +1,47 @@
+[
+    {
+        "total_evades": 0,
+        "average_reaction_latency": 0,
+        "safe_area_time": 78.70999999999998,
+        "total_time": 1.6,
+        "safe_area_percentage": 4919.374999999999
+    },
+    {
+        "mean_reaction_time": 0.181110109601702,
+        "std_reaction_time": 0.4791723099257549,
+        "fast_clicks_under_150ms": 6,
+        "premature_clicks": 0,
+        "impulsivity_index": 6.0,
+        "misclicks_per_minute": 0.0,
+        "click_accuracy_ratio": 1.0,
+        "mean_click_distance": 595.1003249599863,
+        "reaction_time_curve": [
+            0.181110109601702
+        ],
+        "startled_responses_count": 1,
+        "max_false_positive_streak": 0,
+        "predicted_behavior": "Focused"
+    },
+    {
+        "analysis_time": "2025-05-07T02:38:05.430660",
+        "avg_intensity_dB": -4.62,
+        "avg_confidence_percent": 43.75,
+        "rage_detected": true,
+        "total_entries": 4,
+        "intensity_threshold": -6.2,
+        "confidence_threshold": 45
+    },
+    {
+        "total_duration_min": 0.04,
+        "frames_processed": 13,
+        "processing_speed_fps": 130.0,
+        "focus_on_screen_percent": 0.0,
+        "smile_rate_per_min": 60.0,
+        "avg_smile_intensity": 0.419,
+        "blink_rate_per_min": 0.0,
+        "positive_emotions_count": 5,
+        "negative_emotions_count": 0,
+        "neutral_emotions_count": 8,
+        "positivity_index": 1.0
+    }
+]

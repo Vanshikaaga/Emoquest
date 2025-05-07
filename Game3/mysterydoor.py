@@ -23,7 +23,6 @@ class RealmOfPortals:
     
     def __init__(self, screen):
         self.screen = screen
-
         self.mole_image = self.load_mole_image("Game3/Assets/mole.png")
         self.mole1_image = self.load_mole_image("Game3/Assets/rat.png")
         self.background = self.load_image("Game3/Assets/garden.jpg", (WIDTH, HEIGHT))
@@ -144,18 +143,20 @@ class RealmOfPortals:
                 if mole['time_left'] <= 0:
                     # Log missed mole or rat
                     logs.append({
-                        "type": "rat" if mole.get('is_rat') else "mole",
                         "spawn_time": mole['spawn_time'],
                         "click_time": None,
                         "reaction_time": None,
                         "clicked": False,
-                        "position": [mole['rect'].x, mole['rect'].y]
+                        "target": "rat" if mole.get('is_rat') else "mole",
+                        "object_x": mole['rect'].x,
+                        "object_y": mole['rect'].y,
+                        "object_width": mole['rect'].width,
+                        "object_height": mole['rect'].height,
+                        "click_x": None,
+                        "click_y": None
                     })
                     active_moles.remove(mole)
 
-            # Draw Holes
-           
-            
             # Draw Moles and Rats
             for mole in active_moles:
                 if mole.get('is_rat'):
@@ -168,7 +169,7 @@ class RealmOfPortals:
                         self.screen.blit(self.mole_image, (mole['rect'].x + 10, mole['rect'].y + 10))
                     else:
                         pygame.draw.circle(self.screen, RED, (mole['rect'].x + HOLE_SIZE // 2, mole['rect'].y + HOLE_SIZE // 2), MOLE_SIZE // 2)
-            
+
             # Display Score and Timer
             font = pygame.font.Font(None, 36)
             self.screen.blit(font.render(f"Score: {score}", True, WHITE), (20, 10))
@@ -187,16 +188,20 @@ class RealmOfPortals:
                             mole['clicked'] = True
                             mole['click_time'] = current_time
                             logs.append({
-                                "type": "mole" if not mole.get('is_rat') else "rat",
                                 "spawn_time": mole['spawn_time'],
                                 "click_time": current_time,
                                 "reaction_time": current_time - mole['spawn_time'],
                                 "clicked": True,
-                                "position": list(event.pos)
+                                "target": "rat" if mole.get('is_rat') else "mole",  # distinguish mole or rat
+                                "object_x": mole['rect'].x,
+                                "object_y": mole['rect'].y,
+                                "object_width": mole['rect'].width,
+                                "object_height": mole['rect'].height,
+                                "click_x": event.pos[0],
+                                "click_y": event.pos[1]
                             })
                             active_moles.remove(mole)
                             break
-
             pygame.display.flip()
 
         self.end_screen(score, count)
@@ -222,15 +227,15 @@ class RealmOfPortals:
                     return True
                 if event.type == pygame.KEYDOWN:
                     if event.key == pygame.K_r:
-                        self.game()
+                        self.run()  # Restart the game by calling the main run function
                     if event.key == pygame.K_q:
                         with open("reaction_logs.json", "w") as f:
                             json.dump(logs, f, indent=4)
-
+                        pygame.quit()
                         return True
 
     def run(self):
-        """Main method to run the game."""
+        """Main method to run the game.""" 
         self.main_menu()  # Show the main menu
         game_over = self.game()  # Start the game
-        return game_over  
+        return game_over
