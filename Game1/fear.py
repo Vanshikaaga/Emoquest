@@ -7,6 +7,8 @@ import time
 
 class RealmOfFear:
     def __init__(self, screen):
+        self.score = 0
+
         self.screen = screen
         self.WIDTH, self.HEIGHT = screen.get_width(), screen.get_height()
         self.WHITE = (255, 255, 255)
@@ -14,15 +16,18 @@ class RealmOfFear:
         self.CYAN = (0, 255, 255)
 
         # Load images and adjust sizes
-        self.player_img = pygame.image.load(r"Game1\Assets\spaceship.png").convert_alpha()
-        self.player_img = pygame.transform.scale(self.player_img, (80, 80))
-
-        self.enemy_img = pygame.image.load(r"Game1\Assets\enemy.png").convert_alpha()
-        self.enemy_img = pygame.transform.scale(self.enemy_img, (180, 120))
-
-        self.trap_img = pygame.image.load(r"Game1\Assets\bomb.png").convert_alpha()
+        try:
+            self.player_img = pygame.image.load(r"Game1/Assets/rohan.png").convert_alpha()
+            self.enemy_img = pygame.image.load(r"Game1/Assets/rghosty.png").convert_alpha()
+            self.trap_img = pygame.image.load(r"Game1/Assets/bomb.png").convert_alpha()
+            self.background_img = pygame.image.load(r"Game1/Assets/fearbackdrop.jpeg").convert()
+        except Exception as e:
+            print("Error loading game assets:", e)
+            sys.exit()
+        self.player_img = pygame.transform.scale(self.player_img, (100, 100))
+        self.enemy_img = pygame.transform.scale(self.enemy_img, (220, 180))
         self.trap_img = pygame.transform.scale(self.trap_img, (60, 80))
-
+        self.background_img = pygame.transform.scale(self.background_img, (self.WIDTH, self.HEIGHT))
         self.power_up_imgs = {
             'speed_boost': pygame.transform.scale(pygame.image.load(r"Game1\Assets\speed.png").convert_alpha(), (40, 40)),
             'shield':      pygame.transform.scale(pygame.image.load(r"Game1\Assets\shield.png").convert_alpha(), (40, 40)),
@@ -30,15 +35,17 @@ class RealmOfFear:
             'enemy_freeze':  pygame.transform.scale(pygame.image.load(r"Game1\Assets\freeze.png").convert_alpha(), (40, 40))
         }
 
-        self.background_img = pygame.image.load(r"Game1\Assets\bg2.jpg").convert()
-        self.background_img = pygame.transform.scale(self.background_img, (self.WIDTH, self.HEIGHT))
-
+        
         # Load sounds
         pygame.mixer.init()
-        self.background_music      = pygame.mixer.Sound(r"Game1\Sounds\bg_music.ogg")
+        self.background_music1      = pygame.mixer.Sound(r"Game1\Sounds\fear.mp3") #changeee kiya h
+        self.background_music      = pygame.mixer.Sound(r"Game1\Sounds\fear_intro-trimmed.mp3")  #changeee kiya h
+        self.background_music1.set_volume(0.5) #changeee kiya h
+        self.background_music.set_volume(0.5) #changeee kiya h
+        self.background_music.play(loops=-1)  #changeee kiya h
         self.power_up_sound        = pygame.mixer.Sound(r"Game1\Sounds\powerup.wav")
         self.trap_collision_sound  = pygame.mixer.Sound(r"Game1\Sounds\trap_sound.wav")
-        self.game_over_sound       = pygame.mixer.Sound(r"Game1\Sounds\gameover.wav")
+        #self.game_over_sound       = pygame.mixer.Sound(r"Game1\Sounds\gameover.wav") #changeee kiya h
 
         # Cube & game props
         self.cube_size = 40
@@ -96,7 +103,37 @@ class RealmOfFear:
                 'Time', 'Player_X', 'Player_Y', 'Enemy_X', 'Enemy_Y', 'Distance_to_Nearest_Enemy',
                 'Time_in_Safe_Areas', 'Player_Speed', 'Player_Direction', 'Input_Frequency', 'Events'
             ])
+    
+    def show_intro_image(self):
+        self.background_music.stop() #changeee kiya h
+        try:
+            jumpscare_img = pygame.image.load(r"Game1/Assets/jumpscare.png").convert()
+            jumpscare_sound = pygame.mixer.Sound(r"Game1/Sounds/jumpscare.wav")
+        except Exception as e:
+            print("Error loading jumpscare assets:", e)
+            return
 
+        jumpscare_img = pygame.transform.scale(jumpscare_img, (self.WIDTH, self.HEIGHT))
+        jumpscare_sound.play()
+
+        fade_surface = pygame.Surface((self.WIDTH, self.HEIGHT))
+        fade_surface.fill((0, 0, 0))
+        for alpha in range(255, -1, -10):
+            self.screen.blit(jumpscare_img, (0, 0))
+            fade_surface.set_alpha(alpha)
+            self.screen.blit(fade_surface, (0, 0))
+            pygame.display.update()
+            pygame.time.delay(20)
+
+        pygame.time.delay(1000)
+        for alpha in range(0, 256, 10):
+            self.screen.blit(jumpscare_img, (0, 0))
+            fade_surface.set_alpha(alpha)
+            self.screen.blit(fade_surface, (0, 0))
+            pygame.display.update()
+            pygame.time.delay(20)
+            
+            
     def log_data(self, events_list):
         elapsed_time = time.time() - self.start_time
         direction = math.degrees(math.atan2(self.player_y - self.enemy_y, self.player_x - self.enemy_x))
@@ -123,7 +160,7 @@ class RealmOfFear:
 
     def run(self):
         self.start_logging()
-        self.background_music.play(-1)
+        self.background_music1.play(loops=-1)
 
         # track last timestamp for dt
         last_time = time.time()
@@ -287,3 +324,111 @@ class RealmOfFear:
 
     def check_collision(self, r1, r2):
         return r1.colliderect(r2)  # collision helper
+    def run(self):
+        self.show_intro_image() 
+        self.background_music1.play(loops=-1)  # Play background music #changeee kiya h
+        while True:
+            self.screen.blit(self.background_img, (0, 0))  # Draw background
+
+            for event in pygame.event.get():
+                if event.type == pygame.QUIT:
+                    pygame.quit()
+                    sys.exit()
+                if event.type == pygame.KEYDOWN:
+                    if self.game_over:
+                        if event.key == pygame.K_r:  # Restart the game
+                            self.reset_game()
+                        if event.key == pygame.K_q:  # Quit the game
+                            pygame.quit()
+                            sys.exit()
+                    if event.key == pygame.K_p:  # Pause the game
+                        self.paused = not self.paused
+
+            if not self.game_over and not self.paused:
+                # Player movement
+                keys = pygame.key.get_pressed()
+                player_speed = 10 if self.player_speed_boost else 7
+                if keys[pygame.K_LEFT] and self.player_x > 0:
+                    self.player_x -= player_speed
+                if keys[pygame.K_RIGHT] and self.player_x < self.WIDTH - self.cube_size:
+                    self.player_x += player_speed
+                if keys[pygame.K_UP] and self.player_y > 0:
+                    self.player_y -= player_speed
+                if keys[pygame.K_DOWN] and self.player_y < self.HEIGHT - self.cube_size:
+                    self.player_y += player_speed
+
+                # Enemy movement (bot chases player)
+                self.enemy_x, self.enemy_y = self.move_towards_player(self.player_x, self.player_y, self.enemy_x, self.enemy_y, self.enemy_speed)
+
+                # Move traps
+                if not self.trap_disabled:
+                    self.move_traps()
+
+                # Spawn power-ups
+                self.spawn_power_ups()
+
+                # Check for collision with power-ups
+                player_rect = pygame.Rect(self.player_x, self.player_y, self.cube_size, self.cube_size)
+                for power_up in self.power_ups[:]:
+                    power_up_rect = pygame.Rect(power_up[0], power_up[1], 30, 30)
+                    if self.check_collision(player_rect, power_up_rect):
+                        self.power_ups.remove(power_up)
+                        self.apply_power_up(power_up[3])
+
+                # Update power-up states
+                self.update_power_ups()
+
+                # Draw everything
+                self.draw_player(self.player_x, self.player_y)
+                self.draw_enemy(self.enemy_x, self.enemy_y)
+                self.draw_traps()
+                self.draw_power_ups()
+                self.draw_power_up_timer()
+
+                # Check for collision between player and enemy
+                if not self.player_shield:
+                    enemy_rect = pygame.Rect(self.enemy_x, self.enemy_y, self.cube_size, self.cube_size)
+                    if self.check_collision(player_rect, enemy_rect):
+                        self.game_over = True
+                        self.background_music1.stop() #changeee kiya h
+                        #self.game_over_sound.play()   #changeee kiya h
+                        return True  # Signal game over
+
+                # Check collision with traps
+                if not self.player_shield and not self.trap_disabled:
+                    for trap in self.traps:
+                        trap_rect = pygame.Rect(trap[0], trap[1], self.cube_size, self.cube_size)
+                        if self.check_collision(player_rect, trap_rect):
+                            self.background_music1.stop() #changeee kiya h
+                            self.game_over = True
+                            self.trap_collision_sound.play()
+                            return True  # Signal game over
+
+                # Increase score over time
+                self.score += 1
+
+            elif self.paused:
+                # Draw pause menu
+                font = pygame.font.SysFont(None, 55)
+                text = font.render("Paused", True, self.WHITE)
+                self.screen.blit(text, (self.WIDTH // 2 - text.get_width() // 2, self.HEIGHT // 2 - text.get_height() // 2))
+            else:
+                # Game over screen
+                font = pygame.font.SysFont(None, 55)
+                text = font.render(f"Game Over! Score: {self.score}", True, self.WHITE)
+                self.screen.blit(text, (self.WIDTH // 2 - text.get_width() // 2, self.HEIGHT // 2 - text.get_height() // 2))
+                text2 = font.render("Press R to Restart or Q to Quit", True, self.WHITE)
+                self.screen.blit(text2, (self.WIDTH // 2 - text2.get_width() // 2, self.HEIGHT // 2 + 50))
+
+            # Update the display
+            pygame.display.update()
+            self.clock.tick(30)
+
+# --- Entry Point ---
+if __name__ == "__main__":
+    pygame.init()
+    screen = pygame.display.set_mode((800, 600))
+    pygame.display.set_caption("Realm of Fear")
+    game = RealmOfFear(screen)
+    game.show_intro_image()
+    game.run()

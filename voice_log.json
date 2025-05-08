@@ -1,26 +1,44 @@
 [
   {
-    "timestamp": 1746565641.5535626,
-    "word": "left",
-    "intensity_dB": -4.273833365565919,
+    "timestamp": 1746692498.4182057,
+    "word": "attack",
+    "intensity_dB": -4.4386101652270735,
     "confidence": 45
   },
   {
-    "timestamp": 1746565653.0856133,
-    "word": "left",
-    "intensity_dB": -5.858249784333315,
-    "confidence": 45
-  },
-  {
-    "timestamp": 1746565658.2092366,
-    "word": "left",
-    "intensity_dB": -4.3888086487082045,
-    "confidence": 45
-  },
-  {
-    "timestamp": 1746565664.8892949,
+    "timestamp": 1746692513.0050814,
     "word": "right",
-    "intensity_dB": -3.975147272315181,
-    "confidence": 40
+    "intensity_dB": -4.536945027463525,
+    "confidence": 54
+  },
+  {
+    "timestamp": 1746692524.763489,
+    "word": "attack",
+    "intensity_dB": -4.117816257912377,
+    "confidence": 50
+  },
+  {
+    "timestamp": 1746692528.6061933,
+    "word": "attack",
+    "intensity_dB": -3.7205903292206797,
+    "confidence": 62
+  },
+  {
+    "timestamp": 1746692536.5423636,
+    "word": "attack",
+    "intensity_dB": -4.500928753219581,
+    "confidence": 50
+  },
+  {
+    "timestamp": 1746692541.6650026,
+    "word": "attack",
+    "intensity_dB": -3.9329824947779075,
+    "confidence": 67
+  },
+  {
+    "timestamp": 1746692560.866453,
+    "word": "attack",
+    "intensity_dB": -4.112346562171582,
+    "confidence": 50
   }
 ]

@@ -6,6 +6,7 @@ import threading
 import time
 from queue import Queue
 from datetime import datetime
+import numpy as np
 class ExpressionPlatformer:
     def __init__(self, screen):
         if not pygame.get_init():
@@ -38,8 +39,8 @@ class ExpressionPlatformer:
         self.obstacle_group = pygame.sprite.Group()
 
         self.testFont = pygame.font.Font('Game4/Assets/font/Pixeltype.ttf', 50)
-        self.bg_music = pygame.mixer.Sound('Game4/Assets/audio/music.wav')
-        self.bg_music.set_volume(0.1)
+        self.bg_music = pygame.mixer.Sound('Game4/Assets/audio/happy.mp3') #changeee kiya h
+        self.bg_music.set_volume(0.5)
         self.bg_music.play(loops=-1)
 
         # Scene
@@ -238,7 +239,7 @@ class ExpressionPlatformer:
                         
                         # Convert to RGB for Pygame display
                         rgb_frame = cv2.cvtColor(resized_frame, cv2.COLOR_BGR2RGB)
-                        pygame_frame = pygame.surfarray.make_surface(rgb_frame)
+                        pygame_frame = pygame.surfarray.make_surface(np.transpose(rgb_frame, (1, 0, 2))) #changeee kiya h
                         self.camera_frame = pygame_frame
 
                         # Write the resized frame to the video file
@@ -336,6 +337,7 @@ class ExpressionPlatformer:
                 # Check for game over
                 self.game_over = self.collisions()
                 if self.game_over:
+                    self.bg_music.stop()
                     self.camera_enabled = False 
                     return True  # Signal game over
 

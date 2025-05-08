@@ -9,7 +9,7 @@ WIDTH, HEIGHT = 1000, 800
 HOLE_SIZE = 100
 MOLE_SIZE = 80
 GRID_SIZE = 4
-TIME_LIMIT = 10  # seconds
+TIME_LIMIT = 30  # seconds
 logs = []
 
 # Colors
@@ -23,6 +23,9 @@ class RealmOfPortals:
     
     def __init__(self, screen):
         self.screen = screen
+        self.bg_music = pygame.mixer.Sound("Game3/Assets/tensed.mp3") # changeee kiya h
+        self.bg_music.set_volume(0.5) # changeee kiya h
+        self.bg_music.play(loops=-1) # changeee kiya h
         self.mole_image = self.load_mole_image("Game3/Assets/mole.png")
         self.mole1_image = self.load_mole_image("Game3/Assets/rat.png")
         self.background = self.load_image("Game3/Assets/garden.jpg", (WIDTH, HEIGHT))
@@ -62,22 +65,7 @@ class RealmOfPortals:
 
     def main_menu(self):
         """Display the main menu."""
-        running = True
-        font = pygame.font.Font(None, 48)
-        while running:
-            self.screen.blit(self.background, (0, 0))
-            title_text = font.render("Whac-A-Mole", True, WHITE)
-            start_text = font.render("Press SPACE to Start", True, WHITE)
-            self.screen.blit(title_text, (WIDTH // 2 - title_text.get_width() // 2, HEIGHT // 3))
-            self.screen.blit(start_text, (WIDTH // 2 - start_text.get_width() // 2, HEIGHT // 2))
-            pygame.display.flip()
-            
-            for event in pygame.event.get():
-                if event.type == pygame.QUIT:
-                    pygame.quit()
-                    exit()
-                if event.type == pygame.KEYDOWN and event.key == pygame.K_SPACE:
-                    return
+        return
 
     def game(self):
         """Run the main game loop."""
@@ -210,29 +198,10 @@ class RealmOfPortals:
     def end_screen(self, score, count):
         """Display the end screen."""
         running = True
-        font = pygame.font.Font(None, 48)
-        while running:
-            self.screen.fill(BLACK)
-            final_score_text = font.render(f"Final Score: {score}", True, WHITE)
-            final_count_text = font.render(f"Final count: {count}", True, WHITE)
-            restart_text = font.render("Press R to Restart or Q to Quit", True, WHITE)
-            self.screen.blit(final_count_text, (WIDTH // 2 - final_count_text.get_width() // 2, HEIGHT // 4))
-            self.screen.blit(final_score_text, (WIDTH // 2 - final_score_text.get_width() // 2, HEIGHT // 3))
-            self.screen.blit(restart_text, (WIDTH // 2 - restart_text.get_width() // 2, HEIGHT // 2))
-            pygame.display.flip()
-            
-            for event in pygame.event.get():
-                if event.type == pygame.QUIT:
-                    pygame.quit()
-                    return True
-                if event.type == pygame.KEYDOWN:
-                    if event.key == pygame.K_r:
-                        self.run()  # Restart the game by calling the main run function
-                    if event.key == pygame.K_q:
-                        with open("reaction_logs.json", "w") as f:
-                            json.dump(logs, f, indent=4)
-                        pygame.quit()
-                        return True
+        self.bg_music.stop()
+        with open("reaction_logs.json", "w") as f:
+            json.dump(logs, f, indent=4)
+        return True
 
     def run(self):
         """Main method to run the game.""" 

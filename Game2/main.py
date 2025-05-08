@@ -1,4 +1,5 @@
 import pygame
+import sys
 from pygame import mixer
 from Game2.fighter import Fighter
 
@@ -30,12 +31,14 @@ class BrawlerGame:
         self.WIZARD_SCALE = 3
         self.WIZARD_OFFSET = [112, 107]
         self.WIZARD_DATA = [self.WIZARD_SIZE, self.WIZARD_SCALE, self.WIZARD_OFFSET]
-
+        
+        self.bg_music = pygame.mixer.Sound(r"Game2/Assets/audio/part6(warrior intro).ogg") #changeee kiya h
+        self.bg_music.set_volume(0.5) #changeee kiya h
+        self.bg_music.play(loops=-1) #changeee kiya h
         # Load music and sounds
         mixer.init()
-        pygame.mixer.music.load(r"Game2/Assets/audio/music.mp3")
-        pygame.mixer.music.set_volume(0.5)
-        pygame.mixer.music.play(-1, 0.0, 5000)
+        self.bg_music1 = pygame.mixer.Sound(r"Game2/Assets/audio/music.mp3") ##changeee kiya h
+        self.bg_music1.set_volume(0.5) ##changeee kiya h
         self.sword_fx = pygame.mixer.Sound(r"Game2/Assets/audio/sword.wav")
         self.sword_fx.set_volume(0.5)
         self.magic_fx = pygame.mixer.Sound(r"Game2/Assets/audio/magic.wav")
@@ -50,7 +53,8 @@ class BrawlerGame:
 
         # Load victory image
         self.victory_img = pygame.image.load(r"Game2/Assets/images/icons/victory.png").convert_alpha()
-        self.lost_img=pygame.image.load(r"Game2/Assets/images/icons/lost.png").convert_alpha()
+        self.lost_img = pygame.image.load(r"Game2/Assets/images/icons/lost.png").convert_alpha()
+        
         # Define number of steps in each animation
         self.WARRIOR_ANIMATION_STEPS = [10, 8, 1, 7, 7, 3, 7]
         self.WIZARD_ANIMATION_STEPS = [8, 8, 1, 8, 8, 3, 7]
@@ -77,7 +81,54 @@ class BrawlerGame:
         pygame.draw.rect(self.screen, self.RED, (x, y, 400, 30))
         pygame.draw.rect(self.screen, self.YELLOW, (x, y, 400 * ratio, 30))
 
+    def show_intro_image(self):
+        """Show the surprise intro image with fade-in effect"""
+        try:
+            # Load and scale the intro image
+            self.bg_music.stop() #changeee kiya h
+            self.bg_music1.play(loops=-1) #changeee kiya h
+            intro_image = pygame.image.load(r"Game2/Assets/images/backgrounds/ragebg.png").convert_alpha()
+            intro_scaled = pygame.transform.scale(intro_image, (self.SCREEN_WIDTH, self.SCREEN_HEIGHT))
+            
+            # Create a surface for fade effect
+            fade_surface = pygame.Surface((self.SCREEN_WIDTH, self.SCREEN_HEIGHT))
+            fade_surface.fill((0, 0, 0))
+            
+            # Fade in effect
+            for alpha in range(0, 255, 5):
+                self.screen.fill((0, 0, 0))
+                intro_scaled.set_alpha(alpha)
+                self.screen.blit(intro_scaled, (0, 0))
+                pygame.display.flip()
+                pygame.time.delay(30)
+            
+            # Show the image fully
+            self.screen.blit(intro_scaled, (0, 0))
+            pygame.display.flip()
+            
+            # Wait for space key press
+            waiting = True
+            while waiting:
+                for event in pygame.event.get():
+                    if event.type == pygame.QUIT:
+                        self.bg_music.stop() #changeee kiya h
+                        pygame.quit()
+                        sys.exit()
+                    if event.type == pygame.KEYDOWN and event.key == pygame.K_SPACE:
+                        self.bg_music.stop() #changeee kiya h
+                        waiting = False
+            
+            # Start the game music
+            #pygame.mixer.music.play(-1, 0.0, 5000) #changeee kiya h
+            
+        except Exception as e:
+            print(f"Error loading intro image: {e}")
+            # If image fails to load, just continue after a delay
+            pygame.time.delay(1000)
+
     def run(self):
+        """Main game loop"""
+        self.show_intro_image() 
         run = True
         while run:
             self.clock.tick(self.FPS)
@@ -117,13 +168,15 @@ class BrawlerGame:
                 if not self.fighter_1.alive or not self.fighter_2.alive:
                     self.round_over = True
                     if not self.fighter_2.alive:
-                      self.screen.blit(self.victory_img, (500, 400))
+                        self.screen.blit(self.victory_img, (500, 400))
                     else:
-                      self.screen.blit(self.lost_img, (500, 400))
+                        self.screen.blit(self.lost_img, (500, 400))
                     pygame.display.update()
                     pygame.time.delay(3000)  # Show victory screen for 3 seconds
+                    self.bg_music1.stop() #changeee kiya h
                     run = False
                     return True
+
             # Event handler
             for event in pygame.event.get():
                 if event.type == pygame.QUIT:
@@ -132,7 +185,4 @@ class BrawlerGame:
             # Update display
             pygame.display.update()
 
-        # Exit pygame
-        pygame.quit()
-
-# Initialize Pygame
+        return True
